@@ -1,0 +1,4 @@
+com\mycompany\pruebaservlets\JakartaRestConfiguration.class
+com\mycompany\pruebaservlets\resources\JakartaEE10Resource.class
+com\mycompany\pruebaservlets\servlets\LoginServlet.class
+com\mycompany\pruebaservlets\servlets\RegisterServlet.class

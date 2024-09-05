@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos Globales */
+
+h1 {
+  font-size: 50px;
+  line-height: 64px;
+  color: #222;
+}
+
+h2 {
+  font-size: 46px;
+  line-height: 54px;
+  color: #222;
+}
+
+h4 {
+  font-size: 20px;
+  color: #222;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-size: 16px;
+  color: #465b52;
+  margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+  padding: 40px 80px;
+}
+
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+}
+
+/* Inicio Header */
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* arriba, derecha, abajo, izquierda */
+  padding: 5px 15px 0px 15px;
+  background-color: #F6ECDD;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+}
+
+#navbardere li a.ingresar {
+  padding: 3px 15px;
+  width: auto;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #dedede;
+  transition: 0.2s ease;
+  background-color: aliceblue;
+  text-transform: uppercase;
+  color: #736550;
+}
+
+#navbarizq, #navbardere {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navbarizq li, #navbardere li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbarizq li a, #navbardere li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #888888;
+  transition: 0.3s ease;
+}
+
+#navbarizq li a:hover,  #navbardere li a:hover,  
+#navbarizq li a.active {
+  color: #000000;
+}
+
+#navbarizq a.active::after,  #navbardere li a.carrito:hover::after,
+#navbarizq li a:hover::after {
+  content: "";
+  width: calc(100% - 60px);
+  height: 3px;
+  background-color: #000000;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+
+/* Inicio Contenido Principal */
+
+.container {
+  margin-top: 20px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+#hero {
+  background-image: url("../Images/banner.jpg");
+  height: 350px;
+  max-width: 100%;
+  background-size: cover;
+  background-position: top 38% right 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#hero h1, p {
+  color: white;
+}
+
+#hero p {
+  font-weight: 500;
+}
+
+#producto1 {
+  text-align: center;
+}
+
+#producto1 .pro-container {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 20px;
+  flex-wrap: wrap;
+}
+
+#producto1 .pro {
+  width: 23%;
+  min-width: 250px;
+  /* Arriba-Abajo y Derecha-Izquierda  */
+  padding: 10px 12px;
+  border: 1px solid #F6ECDD;
+  /* border-radius: 25px; */
+  cursor: pointer;
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+  margin: 15px 0;
+  transition: 0.2 ease;
+  position: relative;
+  margin-right: 23px;
+}
+
+#producto1 .pro:hover {
+  box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+}
+
+#producto1 .pro img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+#producto1 .pro .description {
+  text-align: start;
+  padding: 10px 0;
+}
+
+/* SI SE QUITA EL --LEMAITRE DESCRIPTION--, REMOVER TAMBIEN ESTE ESTILO */
+#producto1 .pro .description span {
+  color: #606063;
+  font-size: 12px;
+}
+
+#producto1 .pro .description h5 a {
+  text-decoration: none;
+  padding-top: 7px;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+
+#producto1 .pro .description h4 {
+  padding-top: 7px;
+  color: #888888;
+  font-size: 15px;
+}
+
+#producto1 .pro .cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50px;
+  background-color: #f6ecdd;
+  /* font-weight: 500; */
+  color: #000000;
+  border: 1px solid #eae2d5;
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+

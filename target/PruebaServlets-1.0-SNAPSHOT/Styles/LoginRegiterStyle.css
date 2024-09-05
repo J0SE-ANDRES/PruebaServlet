@@ -1,0 +1,235 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("../Images/banner.jpg");
+    background-size: cover;
+}
+
+/* Contenedor del formulario (estilos generales) */
+.container-from {
+    display: flex;
+    border-radius: 20px;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    height: 500px;
+    max-width: 900px;
+    transition: all 1s ease;
+}
+
+/* Informacion Izquierda */
+.information-izq {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #F6ECDD;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.info-user {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.info-user h2 {
+    color: #333;
+    font-size: 2.5rem;
+}
+
+.info-user p {
+    font-weight: 400;
+    color: #555;
+    margin: 15px 0;
+}
+
+/* Personalizacion del Inicio de Sesion */
+
+.info-user input {
+    font-size: 0.8rem;
+    font-weight: 500;
+    background-color: transparent;
+    outline: none;
+    border: solid 2px #736550;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #736550;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.info-user input:hover {
+    background-color: #736550;
+    border: none;
+    color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Informacion Derecha */
+.information-dere {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.from-info-user {
+    padding: 0 30px;
+}
+
+.from-info-user h2 {
+    color: #333;
+    font-size: 2rem;
+}
+
+.from-info-user p {
+    color: #555;
+    font-weight: 500;
+}
+
+/* Estilos de Iconos */
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icons .icon-google, .icons .icon-facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 15px;
+    padding: 10px 35px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #736550;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color .3s ease;
+}
+
+.icons .icon-google:hover, .icons .icon-facebook:hover {
+    background-color: #736550;
+}
+
+.icons i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #736550;
+}
+
+.icons p {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #736550;
+}
+
+.icons .icon-google:hover p, .icons .icon-facebook:hover p,
+.icons .icon-google:hover i, .icons .icon-facebook:hover i {
+    color: #fff;
+}
+
+/* Estilos de Formulario */
+
+.formulario {
+    margin-top: 30px;
+}
+
+.formulario label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    padding: 0px 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.formulario label input {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.formulario label i {
+    color: #a7a7a7;
+    font-weight: 500;
+}
+
+.formulario input[type = "submit"] {
+    font-size: 0.9rem;
+    font-weight: 500;
+    background-color: #736550;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 35px;
+    cursor: pointer;
+    margin: 10px 0 25px 0;
+}
+
+.formulario input[type = "submit"]:hover {
+    background-color: #615543;
+}
+
+/* Formulario de Inicio de Sesion */
+.hidden {
+    position: absolute;
+    transform: translateY(-200%);
+}
+
+/* Responsive From */
+
+@media screen  and (max-width:780px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen  and (max-width:680px) {
+    html {
+        font-size: 10px;
+    }
+
+    .container-from {
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .information-izq {
+        width: 100%;
+        padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .information-dere {
+        width: 100%;
+        padding: 20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+}
